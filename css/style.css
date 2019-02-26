@@ -1,0 +1,68 @@
+/****************
+GLOBALS
+****************/
+
+body{
+	font:15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #DEEFFD;
+	text-align:center;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+/**************
+HEADER
+**************/
+
+header{
+	background-color: #1C3854;
+	color: #fff;
+	min-height: 40px;
+}
+
+header a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding: 0 20px;
+}
+
+header #left-logo {
+	float:left;
+}
+
+header #left-logo h1{
+	margin:0;
+}
+
+header #left-logo a{
+	float:right;
+	padding:0 5px;
+	display:inline-block;
+}
+
+.logos{
+	width:40px;
+	height: auto;
+}
+
+header nav{
+	float: right;
+	margin-top:13px;
+}
