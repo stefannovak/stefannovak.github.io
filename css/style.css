@@ -19,50 +19,47 @@ body{
 ul{
 	padding: 0;
 	margin: 0;
+	display: block;
+}
+
+a{
+	text-decoration: none;
+	color:#fff;
 }
 
 /**************
 HEADER
 **************/
 
-header{
-	background-color: #1C3854;
-	color: #fff;
-	min-height: 40px;
+.logos{
+	max-width: 35px;
+	max-height: 35px;
 }
 
-header a{
-	color: #fff;
-	text-decoration: none;
-	font-size: 16px;
-}
-
-header li{
-	float:left;
-	display:inline;
-	padding: 0 20px;
-}
-
-header #left-logo {
-	float:left;
-}
-
-header #left-logo h1{
+.left-header h1{
+	font-size: 40px;
+	float: left;
 	margin:0;
 }
 
-header #left-logo a{
-	float:right;
-	padding:0 5px;
-	display:inline-block;
+.navbar{
+	min-height: 40px;
+	background-color: #1C3854;
+	color: #fff;
+	font-weight: bold;
 }
 
-.logos{
-	width:40px;
-	height:auto;
-}
-
-header nav{
+.right-links{
 	float: right;
-	margin-top:13px;
+	display: block;
+	list-style: none; /* gets rid of bullet points */
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.right-links li{
+	display: inline; /* horizontal*/
+	padding:0 30px;
+	position: ;
 }
