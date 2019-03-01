@@ -9,57 +9,74 @@
 	<meta name="author" content="Stefan Novak">
 	<meta name="keywords" content="web, design, web design, affordable web design, professional, html, css, portfolio">
 </head>
-	<body>
-		<header>
-			<div class="container">
-				<div id="left-logo">
-					<a href="index.html">
-						<h1>Stefan Novak</h1>
-						<a href="https://twitter.com/stefannovak96" target="_blank"><img class="logos" src="./images/twitter.png" alt="twitter"></a>
-						<a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank"><img class="logos" src="./images/linkedin white.png" alt="linkedin"></a>
-					</a>
-				</div>
-				
-				<nav id="navbar">
-					<ul>
-						<li><a href="#">Project</a></li>
-						<li><a href="#">About Me</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+<body>
+	<nav class="navbar">
+		<div class="left-header">
+			<a href="index.html">
+				<h1>Stefan Novak
+				<a href="https://twitter.com/stefannovak96" target="_blank"><img class="twitter" src="./images/twitter-black.png" alt="twitter"></a>
+				<a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank"><img class="linkedin" src="./images/linkedin-black.png" alt="linkedin"></a>
+				</h1>
+			</a>
+		</div>
+		<ul class="right-links">
+			<li><a href="#" class="project-border">Project</a></li>
+			<li><a href="#" class="about-me-border">About Me</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
 
-		<section id="my_project">
-			<div class="container">
-				<!-- centre video of my project -->
-				<h1>This Is My Project</h1>
-				<p>some brief information about my project</p>
-			</div>
-		</section>
+	<header class="myself">
+		<div class="container">
+			<img src="./images/myface2.png" alt="face" class="face">
+			<h1><span>Stefan Novak</span> 22</h1>
+			<hr>
+			<p>Aspiring Software Engineer</p>
+	</header>
 
-		<section>
-			<div class="container">
-				<h1>About Me</h1>
-				<p>Some text about myself Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
-		</section>
+	<section class="project">
+		<div class="container">
+			<h1>This Is My Project</h1>
+			<hr>
+			<!-- centre video of my project -->
+			<img src="./images/flappy_bird.png">
+			<hr>
+			<p>Okay obviously I did not invent flappy bird, this is just some placeholder text while I come up with a project on my own to put here! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</section>
+	<hr>
 
-		<section>
-			<div class="container">
-				<h1>Contact Me</h1>
-				<form>
-					<input type="text" placeholder="First Name" name="first-name"><br>
-					<input type="text" placeholder="Last Name" name="last-name"><br>
-					<input type="text" placeholder="Your Company" name="company"><br>
-					<input type="email" placeholder="Enter Email..." name="Email"><br>
-					<button>Submit</button>
-				</form>
-			</div>
-		</section>
+	<section class="info">
+		<div class="container">
+			<h1>About Me</h1>
+			<hr>
+			<p>I am a student at the Open University studying their Computing and IT course, while heavily learning my own programming on the side. I created this portfolio website myself, showcasing my own project, while also demonstrating multiple programming.</p>
+	</section>
+	<hr>
 
-		<footer>
-			<p>Copyright &copy; Stefan Novak 2018</p>
-		</footer>
-	</body>
+	<section class="contact">
+		<div class="container">
+			<h1>Contact Me</h1>
+			<hr>
+			<form>
+				<input type="text" placeholder="First Name" name="first-name"><br>
+				<input type="text" placeholder="Last Name" name="last-name"><br>
+				<input type="text" placeholder="Your Company" name="company"><br>
+				<input type="email" placeholder="Enter Email..." name="Email"><br>
+				<button>Submit</button>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<p>Copyright &copy; Stefan Novak 2018</p>
+	</footer>
+	
+</body>
 </html>
