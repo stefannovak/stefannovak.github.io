@@ -6,63 +6,195 @@ body{
 	font:15px/1.5 Arial, Helvetica, sans-serif;
 	padding: 0;
 	margin: 0;
-	background-color: #DEEFFD;
+	background-color: /* #B1ABAD; */ #9099A2;
 	text-align:center;
+	color:white;
 }
 
 .container{
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
+	margin-top: 30px;
 }
 
 ul{
 	padding: 0;
 	margin: 0;
+	display: block;
+}
+
+a{
+	text-decoration: none;
+	color:#1f1f1e;
 }
 
 /**************
 HEADER
 **************/
 
-header{
-	background-color: #1C3854;
-	color: #fff;
+/* the entire top nav bar */
+.navbar{
 	min-height: 40px;
+	background-color: /*#46474A; */ #d5d5d5;
+	color: black;
+	font-weight: bold;
+	top: 0;
+	position: fixed;
+	width: 100%;
 }
 
-header a{
-	color: #fff;
-	text-decoration: none;
-	font-size: 16px;
+.linkedin{
+	position:absolute;
+	top: 15%;
+	left: 22%;
+	max-width: 35px;
+	max-height: 35px;
 }
 
-header li{
-	float:left;
-	display:inline;
-	padding: 0 20px;
+.twitter{
+	position:absolute;
+	top: 15%;
+	left: 24%;
+	max-width: 35px;
+	max-height: 35px;
 }
 
-header #left-logo {
-	float:left;
-}
-
-header #left-logo h1{
+/* STEFAN NOVAK */
+.left-header h1{
+	font-size: 35px;
+	float: left;
 	margin:0;
+	padding-left: 190px;
 }
 
-header #left-logo a{
-	float:right;
-	padding:0 5px;
-	display:inline-block;
-}
 
-.logos{
-	width:40px;
-	height: auto;
-}
-
-header nav{
+/* the whole right side */
+.right-links{
 	float: right;
-	margin-top:13px;
+	display: block;
+	list-style: none; /* gets rid of bullet points */
+	font-size: 20px;
+	text-align: center;
+	padding-top: 11px;
+	padding-right: 200px;
+}
+
+/* project about-me contact */
+.right-links li{
+	display: inline; /* horizontal*/
+	padding:0 30px;
+	border-right: solid 1px #1f1f1e;
+}
+
+/* white underlines */
+.navbar .right-links a:hover {
+	border-bottom: 1px solid #2E2E2E;
+	padding-bottom: 5px;
+}
+
+/**************
+MYSELF
+**************/
+header {
+	min-height: 300px;
+	margin-top: 5%;
+	padding-bottom: 1%;
+	border-bottom: solid 1px white;
+}
+
+.face{
+	max-height: 200px;
+	max-width: 200px;
+	border-radius: 50%;
+	border:solid 3px #fff;
+	margin: 0 auto 10px;
+}
+
+header h1{
+	margin:0;
+	padding:0;
+}
+
+header h1 span{
+	border-right: 1px solid white;
+	padding: 0 10px;
+}
+
+header hr{
+	padding: 0;
+	margin-top: 0;
+    max-width: 270px;
+    border: 0;
+    border-top: solid 1px;
+}
+
+header p{
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	margin-top: 5px;
+}
+/***************
+MY PROJECT
+***************/
+
+.project h1{
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.project hr{
+	max-width: 60%;
+}
+
+.project img{
+	max-height: 700px;
+	max-width: 700px;
+	border-radius: 1%;
+}
+
+.project p{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+
+
+/***************
+INFO
+***************/
+
+.info h1{
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.info hr{
+	max-width: 30%;
+}
+
+/***************
+CONTACT
+***************/
+
+.contact hr{
+	max-width: 10%;
+}
+
+/***************
+FOOTER
+***************/
+
+.footer{
+	background-color: #5D5C61;
+	color:white;
+	position:relative;
+	padding: 0;
+    width:100%;
+    height: 2%;
+}
+
+footer p{
+	padding: 0;
+	margin: 0;
 }
