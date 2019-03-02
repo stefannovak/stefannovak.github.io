@@ -315,16 +315,21 @@ MEDIA QUERIES
 	nav .right-links{
 		padding: 0;
 		max-width: 100%;
-		padding-right: 35px;
+		padding-right: 33px;
 	}
 
 	nav .right-links li{
 		padding: 0;
-		padding:0 10px;
+		padding:0 3px;
 	}
 
+	nav .right-links li:not(:last-child){
+	border-right: none;
+}
+
+
 	.myself{
-		padding-top: 150px;
+		padding-top: 0px;
 		max-height: 100%;
 	}
 
@@ -346,7 +351,7 @@ MEDIA QUERIES
 		float:none;
 		width:100%;
 		display: block;
-		margin-bottom: 10%;
+		margin-bottom: 15%;
 	}
 
 	.contact .box1{
@@ -364,7 +369,7 @@ MEDIA QUERIES
 	}
 
 	.contact button{
-		width: 35%;
+		width: 100%;
 		text-align: center;
 	}
 }
