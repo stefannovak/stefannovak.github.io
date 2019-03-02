@@ -13,16 +13,18 @@
 	<nav class="navbar">
 		<div class="left-header">
 			<a href="index.html">
-				<h1>Stefan Novak
-				<a href="https://twitter.com/stefannovak96" target="_blank"><img class="twitter" src="./images/twitter.png" alt="twitter"></a>
-				<a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank"><img class="linkedin" src="./images/linkedin white.png" alt="linkedin"></a>
+				<h1 class="branding">Stefan Novak
+					<div class="logospace">
+						<a href="https://twitter.com/stefannovak96" target="_blank"><img class="twitter" src="./images/twitter.png" alt="twitter"></a>
+						<a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank"><img class="linkedin" src="./images/linkedin white.png" alt="linkedin"></a>
+					</div>
 				</h1>
 			</a>
 		</div>
 		<ul class="right-links">
-			<li><a href="#" class="project-border">Project</a></li>
-			<li><a href="#" class="about-me-border">About Me</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#projectlink" class="project-border">Project</a></li>
+			<li><a href="#aboutlink" class="about-me-border">About Me</a></li>
+			<li><a href="#contactlink">Contact</a></li>
 		</ul>
 	</nav>
 
@@ -31,7 +33,7 @@
 			<img src="./images/myface2.png" alt="face" class="face">
 			<h1><span>Stefan Novak</span> 22</h1>
 			<hr>
-			<p>Aspiring Software Engineer</p>
+			<p>Aspiring Software Engineer</p><a name="projectlink"></a>
 	</header>
 
 	<section class="project">
@@ -41,7 +43,7 @@
 			<!-- centre video of my project -->
 			<img src="./images/flappy_bird.png">
 			<hr>
-			<p>Okay obviously I did not invent flappy bird, this is just some placeholder text while I come up with a project on my own to put here! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p>obviously I did not invent flappy bird, this is just some placeholder text while I come up with a project on my own to put here! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -50,7 +52,7 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</section>
-	<hr>
+	<hr><a name="aboutlink"></a>
 
 	<section class="boxes">
 		<div class="container">
@@ -77,15 +79,21 @@
 	</section>
 	<hr>
 
-	<section class="contact">
+	<a name="contactlink"><section class="contact"></a>
 		<div class="container">
 			<h1>Contact Me</h1>
 			<hr>
 			<form>
-				<input type="text" placeholder="First Name" name="first-name"><br>
-				<input type="text" placeholder="Last Name" name="last-name"><br>
-				<input type="text" placeholder="Your Company" name="company"><br>
-				<input type="email" placeholder="Enter Email..." name="Email"><br>
+				<div class="box1" class="left">
+					<input type="text" placeholder="Name" name="first-name">
+					<input type="text" placeholder="Subject" name="Subject">
+					<input type="text" placeholder="Email" name="company">
+				</div>
+
+				<div class="box1" class="right">
+					<textarea placeholder=""></textarea>
+				</div>
+
 				<button>Submit</button>
 			</form>
 		</div>

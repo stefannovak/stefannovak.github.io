@@ -39,27 +39,25 @@ HEADER
 
 /* the entire top nav bar */
 .navbar{
-	min-height: 40px;
-	background-color:/* #d5d5d5;*/ #828081;
-	color: black;
+	background-color:#5D5C61;
 	font-weight: bold;
 	top: 0;
 	position: fixed;
 	width: 100%;
+	min-height: 52px;
+}
+
+.logospace{
+	display: inline-block;
+	margin: 0;
 }
 
 .linkedin{
-	position:absolute;
-	top: 15%;
-	left: 22%;
 	max-width: 35px;
 	max-height: 35px;
 }
 
 .twitter{
-	position:absolute;
-	top: 15%;
-	left: 24%;
 	max-width: 35px;
 	max-height: 35px;
 }
@@ -173,7 +171,7 @@ MY PROJECT
 BOXES
 ***************/
 .boxes{
-	padding: 3% 0;
+	padding: 1% 0 3%;
 	background-color: #5D5C61;
 }
 
@@ -184,7 +182,8 @@ BOXES
 }
 
 .boxes p{
-	padding:0 40px;
+	padding:0 40px 30px;
+	font-size: 13px;
 }
 
 .boxes ul{
@@ -223,10 +222,56 @@ BOXES
 /***************
 CONTACT
 ***************/
+.contact{
+	padding-bottom: 1%;
+	padding:0 15%;
+	margin:0 0%;
+}
+
+.contact .box1{
+	float:left;
+	width: 50%;
+	margin:0;
+	padding:0%;
+}
+
+.contact h1{
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-top: 0;	
+}
 
 .contact hr{
-	max-width: 10%;
+	max-width: 25%;
+	padding-top: 0;
+	margin-bottom:3%;
 }
+
+.contact input{
+	width: 90%;
+	box-sizing: border-box;
+	margin: 5px 0;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+.contact textarea{
+	width: 90%;
+	height: 171px;
+	resize: none;
+	border-radius: 4px;
+	border:none;
+}
+
+.contact button{
+	margin: 10px 0;
+	padding: 12px 20px;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+  	width: 15%;
+}
+
 
 /***************
 FOOTER
@@ -239,9 +284,71 @@ FOOTER
 	padding: 0;
     width:100%;
     height: 2%;
+    border-top:solid 1px white;
 }
 
 footer p{
 	padding: 0;
 	margin: 0;
+}
+
+/**************
+MEDIA QUERIES
+**************/
+@media(max-width: 768px){
+	nav, nav img{
+		float:none;
+		text-align: center;
+		width:100%;
+	}
+
+	nav .branding{
+		padding:0 15.2%;
+		max-width: 100%
+	}
+
+	nav .right-links{
+		padding: 0;
+	}
+
+	.myself{
+		padding-top: 100px;
+	}
+
+	.project h1{
+		margin-bottom: 0;
+	}
+
+	.project img{
+		padding:10px 0;
+	}
+
+	.boxes .box:not(:last-child) {
+		border-right:none;
+		float: none;
+		width:100%;
+	}
+
+	.boxes .box{
+		float:none;
+		width:100%;
+	}
+
+	.contact .box1{
+		float:none;
+		padding: 0;
+		margin:0;
+		width: 100%;
+	}
+
+	.contact textarea{
+		width: 249.75px;
+		border:0;
+		padding:0;
+		margin-top:5px;
+	}
+
+	.contact button{
+		width: 30%;
+	}
 }
