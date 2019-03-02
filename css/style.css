@@ -40,7 +40,7 @@ HEADER
 /* the entire top nav bar */
 .navbar{
 	min-height: 40px;
-	background-color:/* #d5d5d5; */ #828081;
+	background-color:/* #d5d5d5;*/ #828081;
 	color: black;
 	font-weight: bold;
 	top: 0;
