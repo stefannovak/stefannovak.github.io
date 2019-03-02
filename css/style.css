@@ -296,6 +296,11 @@ footer p{
 MEDIA QUERIES
 **************/
 @media(max-width: 768px){
+	nav.navbar{
+		position: static;
+		min-height: 150px;
+	}
+
 	nav, nav img{
 		float:none;
 		text-align: center;
@@ -310,7 +315,7 @@ MEDIA QUERIES
 	nav .right-links{
 		padding: 0;
 		max-width: 100%;
-		padding-right: 50px;
+		padding-right: 35px;
 	}
 
 	nav .right-links li{
