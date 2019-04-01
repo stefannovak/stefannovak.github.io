@@ -509,6 +509,6 @@ MEDIA QUERIES
 
 	footer {
 		top: 100%;
-		position: fixed;
+		position: absolute;
 	}
 }
