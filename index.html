@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Stefan Novak</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="Stefan Novak, an upcoming software engineer in London, building a website to host my project to show prospective employers.">
 	<meta name="author" content="Stefan Novak">
@@ -15,15 +16,20 @@
 			<a href="index.html">
 				<h1 class="branding">Stefan Novak
 					<div class="logospace">
-						<a href="https://twitter.com/stefannovak96" target="_blank"><img class="twitter" src="./images/twitter.png" alt="twitter"></a>
-						<a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank"><img class="linkedin" src="./images/linkedin white.png" alt="linkedin"></a>
-						<a href="https://github.com/stefannovak" target="_blank"><img class="github" src="./images/Github.png" alt="github"></a>
+						<!-- <a href="https://twitter.com/stefannovak96" target="_blank"><img class="twitter" src="./images/twitter.png" alt="twitter"></a>
+						<a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank"><img class="linkedin" src="./images/linkedin.png" alt="linkedin"></a>
+						<a href="https://github.com/stefannovak" target="_blank"><img class="github" src="./images/Github.png" alt="github"></a> -->
+						<div class="icon-bar">
+   							<a href="https://twitter.com/stefannovak96" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a> 
+  							<a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  							<a href="https://github.com/stefannovak" target="_blank" class="github"><i class="fa fa-github"></i></a> 
+						</div>
 					</div>
 				</h1>
 			</a>
 		</div>
 		<ul class="right-links">
-			<li><a href="#projectlink" class="project-border">Project</a></li>
+			<li><a href="#projectlink" class="project-border"><a href="https://github.com/stefannovak/javaBookApplication" target="_blank">Project</a></a></li>
 			<li><a href="#aboutlink" class="about-me-border">About Me</a></li>
 			<li><a href="#contactlink">Contact</a></li>
 		</ul>
@@ -39,7 +45,7 @@
 
 	<section class="project">
 		<div class="container">
-			<h1>Library Application</h1>
+			<h1><a href="https://github.com/stefannovak/javaBookApplication" target="_blank">Library Application</a></h1>
 			<hr>
 			<img src="./images/BookApplication.png">
 			<hr>
@@ -88,11 +94,9 @@
 					<input type="text" placeholder="Subject" name="Subject">
 					<input type="text" placeholder="Email" name="company">
 				</div>
-
 				<div class="box1" class="right">
-					<textarea placeholder=""></textarea>
+					<textarea placeholder="Message"></textarea>
 				</div>
-
 				<button>Submit</button>
 			</form>
 		</div>
