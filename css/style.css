@@ -47,24 +47,40 @@ HEADER
 	min-height: 52px;
 }
 
-/*.logospace{
-	display: inline-block;
-	margin: 0;
-}*/
-
-.linkedin{
-	max-width: 35px;
-	max-height: 35px;
+/* STEFAN NOVAK */
+.left-header h1{
+	font-size: 35px;
+	float: left;
+	margin:0;
+	padding-left: 190px;
 }
 
-.twitter{
-	max-width: 35px;
-	max-height: 35px;
+
+/* the whole right side */
+.right-links{
+	float: right;
+	display: block;
+	list-style: none; /* gets rid of bullet points */
+	font-size: 20px;
+	text-align: center;
+	padding-top: 11px;
+	padding-right: 200px;
 }
 
-.github{
-	max-width: 32px;
-	max-height: 32px;
+/* project about-me contact */
+.right-links li{
+	display: inline; /* horizontal*/
+	padding:0 30px;
+}
+
+.right-links li:not(:last-child){
+	border-right: solid 1px /*#1f1f1e;*/ white;
+}
+
+/* white underlines */
+.navbar .right-links a:hover {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 5px;
 }
 
 /* SOCIAL MEDIA BAR - I basically ripped this off https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp */
@@ -104,44 +120,6 @@ HEADER
 .linkedin {
   background: #007bb5;
   color: white;
-}
-
-
-
-/* STEFAN NOVAK */
-.left-header h1{
-	font-size: 35px;
-	float: left;
-	margin:0;
-	padding-left: 190px;
-}
-
-
-/* the whole right side */
-.right-links{
-	float: right;
-	display: block;
-	list-style: none; /* gets rid of bullet points */
-	font-size: 20px;
-	text-align: center;
-	padding-top: 11px;
-	padding-right: 200px;
-}
-
-/* project about-me contact */
-.right-links li{
-	display: inline; /* horizontal*/
-	padding:0 30px;
-}
-
-.right-links li:not(:last-child){
-	border-right: solid 1px /*#1f1f1e;*/ white;
-}
-
-/* white underlines */
-.navbar .right-links a:hover {
-	border-bottom: 1px solid #fff;
-	padding-bottom: 5px;
 }
 
 /**************
@@ -201,7 +179,7 @@ MY PROJECT
 
 .project img{
 	max-height: 700px;
-	max-width: 800px;
+    max-width: 800px;
 	border-radius: 1%;
 	padding: 1%;
 }
@@ -353,6 +331,8 @@ footer p{
 /**************
 MEDIA QUERIES
 **************/
+/*
+
 @media(max-width: 768px){
 	nav.navbar{
 		position: static;
@@ -373,7 +353,7 @@ MEDIA QUERIES
 	nav .right-links{
 		padding: 0;
 		max-width: 100%;
-		padding-right: 33px;
+/*		padding-right: 33px;
 	}
 
 	nav .right-links li{
@@ -431,5 +411,104 @@ MEDIA QUERIES
 		text-align: center;
 	}
 }
+*/
 
+@media(max-width: 768px) {
+	.navbar, .navbar h1, .right-links, .right-links li {
+		float: none;
+		text-align: center;
+		width: 100%;
+		padding: 0;
+	}
 
+	.right-links li:not(:last-child){
+		border-right: none;
+		padding-right: 5%;
+	}
+
+	.navbar .right-links a:hover {
+		border-bottom: none;
+		padding-bottom: 0;
+		text-decoration: underline;
+	}
+
+	/* SOCIAL MEDIA BAR - I basically ripped this off https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp */
+	.icon-bar {
+	    position: fixed;
+	    top: 10%;
+	    left: 0%;
+	    -webkit-transform: translateY(9%);
+	    -ms-transform: translateY(9%);
+	    transform: translateY(9%);
+	    display: inline-block;
+	}
+
+	.icon-bar a {
+	    display: block;
+	    text-align: center;
+	    padding: 5px;
+	    transition: all 0.3s ease;
+	    color: white;
+	    font-size: 20px;
+	}
+
+	.mobile {
+		padding-top: 17%;
+	}
+
+	.mobileHR {
+		display: none;
+	}
+
+	.project img{
+		max-height: /*600px*/ 100%;
+		max-width: /*350px*/ 100%;
+		border-radius: 1%;
+		padding: 1%;
+	}
+
+	.boxes .box{
+		float:none;
+		width:100%;
+		display: block;
+		margin: 0;
+		border-right: 0;
+	}
+
+	.boxes .box h2 {
+		text-decoration: underline;
+	}
+
+	.boxes .box:not(:last-child) {
+    	border-right: none;
+    	height: 200px;
+	}
+
+	.boxes hr {
+		display: none;
+	}
+
+	.contact .box1{
+		float:none;
+		padding: 0;
+		margin:0;
+		width: 100%;
+	}
+
+	.contact textarea{
+		width: 80%;
+		border:0;
+		padding:0;
+		margin-top:5px;
+	}
+
+	.contact button{
+		width: 80%;
+		text-align: center;
+	}
+
+	footer {
+		top: 100%;
+		position: fixed;
+	}
+}
