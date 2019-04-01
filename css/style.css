@@ -435,7 +435,7 @@ MEDIA QUERIES
 	/* SOCIAL MEDIA BAR - I basically ripped this off https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp */
 	.icon-bar {
 	    position: fixed;
-	    top: 10%;
+	    top: 20%;
 	    left: 0%;
 	    -webkit-transform: translateY(9%);
 	    -ms-transform: translateY(9%);
