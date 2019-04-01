@@ -435,7 +435,7 @@ MEDIA QUERIES
 	/* SOCIAL MEDIA BAR - I basically ripped this off https://www.w3schools.com/howto/howto_css_sticky_social_bar.asp */
 	.icon-bar {
 	    position: fixed;
-	    top: 20%;
+	    top: 10%;
 	    left: 0%;
 	    -webkit-transform: translateY(9%);
 	    -ms-transform: translateY(9%);
@@ -470,13 +470,18 @@ MEDIA QUERIES
 	.boxes .box{
 		float:none;
 		width:100%;
-		display: block;
+		display: inline-block;
 		margin: 0;
 		border-right: 0;
+		max-width: 500px;
 	}
 
 	.boxes .box h2 {
 		text-decoration: underline;
+	}
+
+	.boxes .box ul {
+		font-size: 13px;
 	}
 
 	.boxes .box:not(:last-child) {
@@ -493,7 +498,6 @@ MEDIA QUERIES
 		padding: 0;
 		margin:0;
 		width: 100%;
-		margin-bottom: 10%;
 	}
 
 	.contact textarea{
@@ -510,6 +514,6 @@ MEDIA QUERIES
 
 	footer {
 		top: 100%;
-		position: absolute;
+		position: fixed;
 	}
 }
