@@ -16,6 +16,7 @@ body{
 	margin: auto;
 	overflow: hidden;
 	margin-top: 30px;
+	min-height: 100%;
 }
 
 ul{
@@ -128,8 +129,7 @@ MYSELF
 header {
 	min-height: 300px;
 	margin-top: 5%;
-	padding-bottom: 1%;
-	border-bottom: solid 1px white;
+	padding-bottom: 0%;
 }
 
 .face{
@@ -169,11 +169,11 @@ header p{
 }
 
 /***************
-MY PROJECT
+MY SWING PROJECT
 ***************/
 
 .project h1{
-	margin-top: 0;
+	margin-top: 5%;
 	padding-top: 0;
 }
 
@@ -262,6 +262,57 @@ BOXES
 }
 
 /***************
+LINK-BOXES
+***************/
+.link-boxes ul{
+	padding:0% 0;
+}
+
+.link-boxes .box{
+	float:left;
+	text-align: center;
+	width: 33%;
+}
+
+.link-boxes .link-boxes:not(:last-child){
+	border-right: solid 1px white;
+	height: 200px;
+}
+
+.no-styles{
+	list-style: none;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.projects-hr{
+	padding: 0;
+	margin-top: 0;
+    max-width: 270px;
+    border: 0;
+    border-top: solid 1px;
+}
+
+.project-words{
+	padding: 10% 0;
+	text-align: center;
+}
+
+/* white underlines */
+.project-words a:hover {
+	border-bottom: 1px solid #fff;
+	padding-bottom: 5px;
+}
+
+.container2{
+	width:58%;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 0;
+	min-height: 100%;
+}
+
+/***************
 CONTACT
 ***************/
 .contact{
@@ -322,15 +373,51 @@ FOOTER
 	background-color: #5D5C61;
 	color:white;
 	position:relative;
+	bottom: 0;
 	padding: 0;
     width:100%;
-    height: 2%;
+    height: 22px;
     border-top:solid 1px white;
+
 }
+
+.footerswing{
+	background-color: #5D5C61;
+	color:white;
+	position:absolute; /*I have no idea why this works*/
+	bottom: 0;
+	padding: 0;
+    width:100%;
+    height: 22px;
+    border-top:solid 1px white;
+
+}
+
 
 footer p{
 	padding: 0;
 	margin: 0;
+}
+
+/**************
+HIBERNATE
+**************/
+
+.Hcolumn {
+  float: left;
+  width: 48%;
+  padding: 1%;
+}
+
+/* Clear floats after image containers */
+.Hrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.hibernateappheader h1{
+    padding-top: 20% 0 0;
 }
 
 /**************
@@ -498,6 +585,34 @@ MEDIA QUERIES
 		display: none;
 	}
 
+	/* Link boxes */
+
+	.link-boxes .box{
+		float:none;
+		width:100%;
+		display: inline-block;
+		margin: 0;
+		border-right: 0;
+		max-width: 500px;
+	}
+
+	.link-boxes .box h2 {
+		text-decoration: underline;
+	}
+
+	.link-boxes .box ul {
+		font-size: 13px;
+	}
+
+	.link-boxes .box:not(:last-child) {
+    	border-right: none;
+    	height: 200px;
+	}
+
+	.link-boxes hr {
+		display: none;
+	}
+
 	.contact .box1{
 		float:none;
 		padding: 0;
@@ -521,4 +636,28 @@ MEDIA QUERIES
 		top: 100%;
 		position: fixed;
 	}
+
+	/************* Hibernate **************/
+
+	.column {
+    	width: 100%;
+    }
+
+    .hibernateappheader {
+    	padding-top: 20%;
+    }
+
+    .Hcolumn {
+ 		float: none;
+  		width: 100%;
+  		padding: 0%;
+	}
+
+	/* Clear floats after image containers */
+	.Hrow::after {
+	    content: "";
+	    clear: both;
+	    display: table;
+	}
+
 }
