@@ -1,56 +1,123 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Swing | Stefan Novak</title>
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="Stefan Novak, an upcoming software engineer in London, building a website to host my project to show prospective employers.">
-	<meta name="author" content="Stefan Novak">
-	<meta name="keywords" content="web, design, web design, affordable web design, professional, html, css, portfolio">
-</head>
-<body>
-	<nav class="navbar">
-		<div class="left-header">
-			<a href="index.html">
-				<h1 class="branding">Stefan Novak
-					<div class="logospace">
-						<!-- <a href="https://twitter.com/stefannovak96" target="_blank"><img class="twitter" src="./images/twitter.png" alt="twitter"></a>
-						<a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank"><img class="linkedin" src="./images/linkedin.png" alt="linkedin"></a>
-						<a href="https://github.com/stefannovak" target="_blank"><img class="github" src="./images/Github.png" alt="github"></a> -->
-						<div class="icon-bar">
-   							<a href="https://twitter.com/stefannovak96" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a> 
-  							<a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  							<a href="https://github.com/stefannovak" target="_blank" class="github"><i class="fa fa-github"></i></a> 
-						</div>
-					</div>
-				</h1>
-			</a>
-		</div>
-		<ul class="right-links">
-			<li><a href="index.html" class="project-border">About Me</a></li>
-			<li><a href="spring.html" class="project-border">Spring</a></li>
-			<li><a href="hibernate.html" class="about-me-border">Hibernate</a></li>
-			<li><a href="swing.html">Swing</a></li>
-		</ul>
-	</nav>
+<title>Stefan Novak</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-	<section class="project">
-		<div class="container">
-			<h1><a href="https://github.com/stefannovak/javaBookApplication" target="_blank">Library Application</a></h1>
-			<hr class="mobileHR">
-			<img src="./images/BookApplication.png">
-			<hr class="mobileHR">
-			<p>With this application you can store your library of books in a simple, intuitive manner. You can save and open multiple different libraries, and all the source code is available on my <a href="https://github.com/stefannovak/javaBookApplication" target="_blank">GitHub</a>.
-			<br>
-			<br>
-			This Library App is my first app that I've created in Java. I came up with the idea for it on 12/03/19, but decided that I didn't want to do a console based application, I wanted something users could actually see and play with, so I spent the next couple weeks studying Swing so I could create a GUI based application. On the 27th I began work on the app and on the 31st I released this current first version! (Also I'm working on fixing the bugs!).
-		</div>
-	</section>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="./images/face/face.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Stefan Novak | 22</b></h4>
+    <p class="w3-text-grey">Junior Software Engineer</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+  </div>
+  <div class="w3-panel w3-large">
+  	<a href="https://github.com/stefannovak" target="_blank">
+    	<i class="fa fa-github w3-hover-opacity"></i>
+	</a>
+	<a href="https://www.instagram.com/stefananovak" target="_blank">
+    	<i class="fa fa-instagram w3-hover-opacity"></i>
+	</a>
+    <a href="https://twitter.com/stefannovak96" target="_blank">
+    	<i class="fa fa-twitter w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank">
+    	<i class="fa fa-linkedin w3-hover-opacity"></i>
+	</a>
+  </div>
+</nav>
 
-	<footer class="footerswing">
-		<p>Copyright &copy; Stefan Novak 2019</p>
-	</footer>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="index.html"><img src="./images/face/face.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <a href="https://github.com/stefannovak/javaBookApplication">
+      <h1><b>My Swing Project</b></h1>
+    </a>
+    <div class="w3-section w3-bottombar w3-padding-16"></div>
+    </div>
+  </header>
+
+<!-- DESCRIPTION -->
+<p>With this application you can store your library of books in a simple, intuitive manner. You can save and open multiple different libraries, and all the source code is available on my <a href="https://github.com/stefannovak/javaBookApplication">GitHub!</a> 
+<hr>
+This library app is my first app that I've created in Java. I came up with the idea for it on 12/03/19, but decided that I didn't want to do a console based application, I wanted something users could actually see and play with, so I spent the next couple weeks studying Swing so I could create a GUI based application. On the 27th I began work on the app and on the 31st I released this current first version!
+<hr>
+I learnt a lot about Java through this project, and it's currently the one I'm still the most proud of. The application features the MVC architecture, custom classes, enumerations and interfaces, event handling, mnemonics, file exploration, a POJO and a GridBag layout. There are some bugs, such as the ID's not correcting after deletion of an entry, but I've decided not to return to this project and perfect it, as Swing doesn't seem to be in demand at the moment in London, and Spring seems far more important to learn than JavaFX to get a job.
+</p>
+
+<!-- SCREENSHOTS -->
+<div class="w3-row w3-container" style="margin:50px 0">
+
+  <div class="w3-half w3-container">
+    <div class="w3-topbar w3-border-grey">
+      <a href="./images/Swing/fileexplorer.png">
+      <img src="./images/Swing/fileexplorer.png"  style="width:100%">
+      </a>
+      <h5>The file explorer</h5>
+    </div>
+  </div>
+
+  <div class="w3-half w3-container">
+    <div class="w3-topbar w3-border-grey">
+      <a href="./images/Swing/BookApplication.png">
+      <img src="./images/Swing/BookApplication.png" style="width:100%">
+      </a>
+      <h5>The finished application</h5>
+    </div>
+  </div>
+  </div>
+
+  <div class="w3-row w3-container" style="margin:50px 0">
+  <div class="w3-half w3-container">
+    <div class="w3-topbar w3-border-grey">
+      <a href="./images/Swing/swingcode.png">
+        <img src="./images/Swing/swingcode.png" style="width:100%">
+      </a>
+      <h5>Some code of the app</h5>
+    </div>
+  </div>
+
+</div>
+
+  <!-- FOOTER -->
+  <div class="w3-black w3-center w3-padding-24">Copyright &copy; Stefan Novak 2019 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
 </html>

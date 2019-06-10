@@ -1,45 +1,140 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Spring | Stefan Novak</title>
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="Stefan Novak, an upcoming software engineer in London, building a website to host my project to show prospective employers.">
-	<meta name="author" content="Stefan Novak">
-	<meta name="keywords" content="web, design, web design, affordable web design, professional, html, css, portfolio">
-</head>
-<body>
+<title>Stefan Novak</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-	<nav class="navbar">
-		<div class="left-header">
-			<a href="index.html">
-				<h1 class="branding">Stefan Novak
-					<div class="logospace">
-						<div class="icon-bar">
-   							<a href="https://twitter.com/stefannovak96" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a> 
-  							<a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  							<a href="https://github.com/stefannovak" target="_blank" class="github"><i class="fa fa-github"></i></a> 
-						</div>
-					</div>
-				</h1>
-			</a>
-		</div>
-		<ul class="right-links">
-			<li><a href="index.html" class="project-border">About Me</a></li>
-			<li><a href="spring.html" class="project-border">Spring</a></li>
-			<li><a href="hibernate.html" class="about-me-border">Hibernate</a></li>
-			<li><a href="swing.html">Swing</a></li>
-		</ul>
-	</nav>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="./images/face/face.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Stefan Novak | 22</b></h4>
+    <p class="w3-text-grey">Junior Software Engineer</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+  </div>
+  <div class="w3-panel w3-large">
+  	<a href="https://github.com/stefannovak" target="_blank">
+    	<i class="fa fa-github w3-hover-opacity"></i>
+	</a>
+	<a href="https://www.instagram.com/stefananovak" target="_blank">
+    	<i class="fa fa-instagram w3-hover-opacity"></i>
+	</a>
+    <a href="https://twitter.com/stefannovak96" target="_blank">
+    	<i class="fa fa-twitter w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank">
+    	<i class="fa fa-linkedin w3-hover-opacity"></i>
+	</a>
+  </div>
+</nav>
 
-	<h1 style="padding-top: 5%">Work In Progress</h1>
-	<p>I am currently working on developing this application. You can see my progress at my <a href="https://github.com/stefannovak/spring-hibernate-library-project" style="font-weight: bold;">GitHub</a>! It's going to be great!</p>
-	<p>Check out my <a href="hibernate.html" style="font-weight: bold;">Hibernate </a> and <a href="swing.html" style="font-weight: bold;">Swing </a> projects in the meantime!</p>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-	<footer class="footerswing">
-		<p>Copyright &copy; Stefan Novak 2019</p>
-	</footer>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="index.html"><img src="./images/face/face.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <a href="https://github.com/stefannovak/spring-hibernate-library-project">
+      <h1><b>My Spring Project</b></h1>
+    </a>
+    <div class="w3-section w3-bottombar w3-padding-16"></div>
+    </div>
+  </header>
+
+<!-- DESCRIPTION -->
+<p>This is the Spring app that I was developing in May until I put it on the backburner for a bit, but I'm back on it now.
+I spent a long time reading through the various examples of Spring in action on their website, and decided I needed to create something on my own. What else to do than the final variant of my book application?
+<hr>
+The idea is to have the user be able to enter book details through a form, have these details saved into a database, and display them in a neat, interactive table. A seemingly simple concept, though it's proving tricky to implement. Spring started off very foreign to me, it's a big jump from console based java applications, but it's all familiar now, and I can really appreciate the sheer power of this incredible framework.
+<hr>
+If you're interested, you can view the latest version of the source code over at my <a href="https://github.com/stefannovak/spring-hibernate-library-project">GitHub!</a>
+</p>
+
+<!-- SCREENSHOTS -->
+<div class="w3-row w3-container" style="margin:50px 0">
+<div class="w3-half w3-container">
+  <div class="w3-topbar w3-border-grey">
+    <a href="./images/Spring/splash.png">
+    <img src="./images/Spring/splash.png"  style="width:100%">
+    </a>
+    <h5>Splash page</h5>
+  </div>
+</div>
+
+<div class="w3-half w3-container">
+  <div class="w3-topbar w3-border-grey">
+    <a href="./images/Spring/form.png">
+    <img src="./images/Spring/form.png" style="width:100%">
+    </a>
+    <h5>The book form</h5>
+  </div>
+</div>
+</div>
+
+<div class="w3-row w3-container" style="margin:50px 0">
+<div class="w3-half w3-container">
+  <div class="w3-topbar w3-border-grey">
+    <a href="./images/Spring/submission.png">
+      <img src="./images/Spring/submission.png" style="width:100%">
+    </a>
+    <h5>Spring accepting user input and displaying it</h5>
+  </div>
+</div>
+
+<div class="w3-half w3-container">
+  <div class="w3-topbar w3-border-grey">
+    <a href="./images/Spring/h2.png">
+    <img src="./images/Spring/h2.png" style="width:100%">
+    </a>
+    <h5>H2 recognising my Book entity.</h5>
+    </div>
+</div>
+</div>
+
+<!--       <img src="./images/Spring/splash.png" style="width:75%">
+        <h4>Splash page</h4>
+
+      <img src="./images/Spring/form.png" style="width:100%">
+        <h4>The form driving the whole library.</h4>
+
+      <img src="./images/Spring/submission.png" style="width:100%">
+        <h4>Submission working, using the @Controller and Thymeleaf.</h4> -->
+
+  <!-- FOOTER -->
+  <div class="w3-black w3-center w3-padding-24">Copyright &copy; Stefan Novak 2019 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
 </body>
 </html>
