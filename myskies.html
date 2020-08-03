@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<title>Stefan Novak</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="./images/face/face.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Stefan Novak | 23</b></h4>
+    <p class="w3-text-grey">Junior Software Engineer</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+  </div>
+  <div class="w3-panel w3-large">
+  	<a href="https://github.com/stefannovak" target="_blank">
+    	<i class="fa fa-github w3-hover-opacity"></i>
+	</a>
+	<a href="https://www.instagram.com/stefananovak" target="_blank">
+    	<i class="fa fa-instagram w3-hover-opacity"></i>
+	</a>
+    <a href="https://twitter.com/stefannovak96" target="_blank">
+    	<i class="fa fa-twitter w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank">
+    	<i class="fa fa-linkedin w3-hover-opacity"></i>
+	</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:20%">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="index.html"><img src="./images/face/face.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <a href="https://github.com/stefannovak/clear_skies">
+      <h1><b>My Skies</b></h1>
+    </a>
+    <div class="w3-section w3-bottombar w3-padding-16"></div>
+    </div>
+  </header>
+
+<!-- DESCRIPTION -->
+<p>A weather application that displays your local weather information. This project was released to the Play Store on the 2nd of August and is currently being maintained. It is my most ambitious programming project so far. The data of the app is provided by an API from <a href="https://www.openweathermap.org">openweathermap.org</a>.
+<hr>
+<p>This application features a beautiful UI, with the background changing dynamically based on time and current weather conditions. There's a display for an hourly and daily forecast, an a screen for particular weather details. There's also a F\C degree converter.
+<hr>
+<p>This app was originally created using Kotlin. I got quite far until I reached some tough obstacles, such as taking the API response outside of a fetch JSON method and using it elsewhere in the app. During a point of low productivity I had a look at Flutter and was amazed as how easily thing's could be implemented. Within a week I went from no knowledge of Dart to creating a functional, complex weather application.
+<hr>
+
+<hr>
+<p>Download here! (coming soon)</p>
+
+<hr>
+All the source code is available on my <a href="https://github.com/stefannovak/clear_skies">GitHub</a>  
+</a>
+
+<div class="w3-section w3-bottombar w3-padding-16"></div>
+
+<!-- SCREENSHOTS -->
+<div class="w3-row w3-container">
+
+  <div class="w3-third w3-container">
+      <a href="./images/clear_weather/clear1.jpg">
+      <img src="./images/clear_weather/clear1.jpg"  style="width:295px;height:555px">
+      </a>
+      <p>A screenshot of the app as it looked at the beginning of July when the application was being written in Kotlin<p>
+  </div>
+
+  <div class="w3-third w3-container">
+      <a href="./images/clear_weather/screen 1.jpg">
+      <img src="./images/clear_weather/screen 1.jpg"  style="width:295px;height:555px">
+      </a>
+      <p>The new look of the app after using Flutter instead. It's beautiful and simplistic. <p>
+  </div>
+
+  <div class="w3-third w3-container">
+      <a href="./images/clear_weather/screen 2.jpg">
+      <img src="./images/clear_weather/screen 2.jpg"  style="width:295px;height:555px">
+      </a>
+      <p>Showing the weekly forecast in Fahrenheit, and an example of the background being dynamic to the current weather.<p>
+  </div>
+
+  <div class="w3-third w3-container">
+      <a href="./images/clear_weather/screen 3.jpg">
+      <img src="./images/clear_weather/screen 3.jpg"  style="width:295px;height:555px">
+      </a>
+      <p>The detailed screen, showing 12 more weather data, along with a nice UI. This page also responds to the current unit of degree.<p>
+  </div>
+
+  <div class="w3-third w3-container">
+      <a href="./images/clear_weather/screen 4.jpg">
+      <img src="./images/clear_weather/screen 4.jpg"  style="width:295px;height:555px">
+      </a>
+      <p>Another look at the weekly forecast being in Celsius this time, with the background being clear.<p>
+  </div>
+
+</div>
+
+  <!-- FOOTER -->
+  <div class="w3-black w3-center w3-padding-24">Copyright &copy; Stefan Novak 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
