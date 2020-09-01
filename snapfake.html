@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>Stefan Novak</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="./images/face/face.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Stefan Novak | 23</b></h4>
+    <p class="w3-text-grey">Junior Software Engineer</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+  </div>
+  <div class="w3-panel w3-large">
+  	<a href="https://github.com/stefannovak" target="_blank">
+    	<i class="fa fa-github w3-hover-opacity"></i>
+	</a>
+	<a href="https://www.instagram.com/stefananovak" target="_blank">
+    	<i class="fa fa-instagram w3-hover-opacity"></i>
+	</a>
+    <a href="https://twitter.com/stefannovak96" target="_blank">
+    	<i class="fa fa-twitter w3-hover-opacity"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/stefan-novak-110ab1114/" target="_blank">
+    	<i class="fa fa-linkedin w3-hover-opacity"></i>
+	</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:20%">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="index.html"><img src="./images/face/face.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <a href="https://github.com/stefannovak/clear_skies">
+      <h1><b>Snapfake</b></h1>
+    </a>
+    <div class="w3-section w3-bottombar w3-padding-16"></div>
+    </div>
+  </header>
+
+<!-- DESCRIPTION -->
+<p>This is Snapfake, my ongoing project. I was suggested to try and recreate SnapChat by a fellow developer as a challenge to see how far I've come with mobile development.
+   I'm certainly feeling challenged with this project but that is a great thing, it shows I'm learning.
+<hr>
+<p>Currently, this project features user authentication, handled by Firebase. Firebase also manages the data storage of the users messages, and eventually pictures too. I'm loving Firebase,
+   I find it a really powerful yet simple tool to use to create such complex applications easily.
+<hr>
+<p>
+  Another challenge of this project is that I wanted to start it with the BloC pattern in mind. I'm currently facing difficulties trying to handle the state of things, keeping the functionality away from
+   the UI but again, this is great news, as it means I'm a better developer than I was before this project.
+<hr>
+<p>The major things to come are of course to implement a camera system. I've actually tested the camera feature and it works, just need to figure out how to put it on the specific screen I want, then how to handle the picture and send it around the app. After that, I'll consolidate everything into a great architecture and improve the UI, as it's just basic at the moment.
+<hr>
+All the source code is available on my <a href="https://github.com/stefannovak/snapfake">GitHub</a>  
+</a>
+
+<div class="w3-section w3-bottombar w3-padding-16"></div>
+
+<!-- SCREENSHOTS -->
+<div class="w3-row w3-container">
+
+  <div class="w3-third w3-container">
+      <a href="./images/snapfake/2.jpg">
+      <img src="./images/snapfake/2.jpg"  style="width:295px;height:555px">
+      </a>
+      <p>The homescreen of the app. Uses Firebase to handle user authentication securely.<p>
+  </div>
+
+  <div class="w3-third w3-container">
+      <a href="./images/snapfake/3.jpg">
+      <img src="./images/snapfake/3.jpg"  style="width:295px;height:555px">
+      </a>
+      <p>The list of contacts available to talk to.<p>
+  </div>
+
+  <div class="w3-third w3-container">
+      <a href="./imagessnapfake/4.jpg">
+      <img src="./images/snapfake/4.jpg"  style="width:295px;height:555px">
+      </a>
+      <p>Showing the capability to add a new friend, using a collection in the Cloud Firestore to retrieve a user's username.<p>
+  </div>
+
+  <div class="w3-third w3-container">
+      <a href="./images/snapfake/1.jpg">
+      <img src="./images/snapfake/1.jpg"  style="width:295px;height:555px">
+      </a>
+      <p>The chat screen, currently not showing user messages but it does display the friend's messages.<p>
+  </div>
+
+</div>
+
+  <!-- FOOTER -->
+  <div class="w3-black w3-center w3-padding-24">Copyright &copy; Stefan Novak 2020 | Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
